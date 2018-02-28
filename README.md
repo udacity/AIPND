@@ -4,7 +4,7 @@ This repository contains code and associated files for the AI Programming with P
 ## Table Of Contents
 
 ### Tutorial Notebooks
-* Vectors => [Git LA Matrix Multiplication]( https://github.com/udacity/linear-algebra/tree/master/matrixMultiplication "Git LA Matrix Mult Repo")
+* Vectors => [Git LA Vectors Lab]( https://github.com/udacity/linear-algebra/tree/master/vectors_lab "Git LA Vectors Repo")
 * Matrix Multiplication => [Git LA Matrix Multiplication]( https://github.com/udacity/linear-algebra/tree/master/matrixMultiplication "Git LA Matrix Mult Repo")
 * Linear Combination [Git LA Linear Combination]( https://github.com/udacity/linear-algebra/tree/master/linearCombination "Git LA Linear Combo Repo" )
 
