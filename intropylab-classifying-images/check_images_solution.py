@@ -63,12 +63,16 @@ def main():
 
 
 # Functions defined below
-    
-# get_input_args() - Handles retrieving and parsing the commandline 
-# arguments created and defined using argparse module. This function 
-# returns these arguments.
-# @return parser.parse_args() - collection of commandline arguments 
 def get_input_args():
+    """
+    Retrieves and parses the command line arguments created and defined using
+    the argparse module. This function returns these arguments as an
+    ArgumentParser object.
+    Parameters:
+     None - simply using argparse module to create & store command line arguments
+    Returns:
+     parse_args() -data structure that stores the command line arguments object  
+    """
     # Creates parse 
     parser = argparse.ArgumentParser()
 
@@ -86,25 +90,29 @@ def get_input_args():
     return parser.parse_args()
 
 
-# get_pet_labels(image_dir) - Creates a dictionary of pet labels based upon 
-# the filenames of the image files. This will be used to check the accuracy of 
-# the image classifier model.
-# @param image_dir - The (full) path to the folder of images that are to be
-#                     classified by pretrained CNN models
-# @return petlabels_dic - Dictionary with key = filename value = label  
 def get_pet_labels(image_dir):
-   # Creates list of files in directory
-   in_files = listdir(image_dir)
+    """
+    Creates a dictionary of pet labels based upon the filenames of the image 
+    files. This is used to check the accuracy of the image classifier model.
+    Parameters:
+     image_dir - The (full) path to the folder of images that are to be
+                 classified by pretrained CNN models (string)
+    Returns:
+     petlabels_dic - Dictionary storing image filename (as key) and Pet Image
+                     Labels (as value)  
+    """
+    # Creates list of files in directory
+    in_files = listdir(image_dir)
+    
+    # Processes each of the files to create a dictionary where the key
+    # is the filename and the value is the picture label (below).
+ 
+    # Creates empty dictionary for the labels
+    petlabels_dic = dict()
    
-   # Processes each of the files to create a dictionary where the key
-   # is the filename and the value is the picture label (below).
-
-   # Creates empty dictionary for the labels
-   petlabels_dic = dict()
-   
-   # Processes through each file in the directory, extracting only the words
-   # of the file that contain the pet image label
-   for idx in range(0, len(in_files), 1):
+    # Processes through each file in the directory, extracting only the words
+    # of the file that contain the pet image label
+    for idx in range(0, len(in_files), 1):
        
        # Skips file if starts with . (like .DS_Store of Mac OSX) because it 
        # isn't an pet image file
@@ -138,39 +146,42 @@ def get_pet_labels(image_dir):
            else:
                print("Warning: Duplicate files exist in directory", 
                      in_files[idx])
+ 
+    # returns dictionary of labels
+    return(petlabels_dic)
 
-   # returns dictionary of labels
-   return(petlabels_dic)
 
-
-# classify_images(images_dir, petlabel_dic, model) - Creates classifier labels
-# with classifier function, compares labels and creates a dictionary of 
-# labels based upon the classification that is returned by the pretrained CNN 
-# model whose architecture is defined by the input parameter model. Returns
-# dictionary of both image labels and the comparison of them to each other
-#
-# PLEASE NOTE: You will be using the classifier() function defined in 
-#  classifier.py within this function. The proper use of the
-#  classifier() function can be found in test_classifier.py Please refer to
-#  this program prior to using the classifier() function to classify images 
-# @param images_dir - The (full) path to the folder of images that are to be
-#                     classified by pretrained CNN models
-# @param petlabel_dic - Dictionary that contains the pet image(true) labels
-#                     that classify what's in the image key = filename & 
-#                     value = pet image(true) label (lowercase with spaces) 
-# @param model - pretrained CNN whose architecture is indicated by this 
-#                parameter, choices are: resnet, alexnet, vgg
-# @return results_dic - Dictionary with key = image filename  
-#                      value = list[pet image label, classifier label, 1/0] 
-#                      where 1 = match between pet image and classifer labels 
-#                      and 0 = no match between labels
 def classify_images(images_dir, petlabel_dic, model):
-   # Creates dictionary that will have all the results key = filename
-   # value = list [Pet Label, Classifier Label, Match(1=yes,0=no)]
-   results_dic = dict()
+    """
+    Creates classifier labels with classifier function, compares labels, and 
+    creates a dictionary containing both labels and comparison of them to be
+    returned.
+     PLEASE NOTE: This function uses the classifier() function defined in 
+     classifier.py within this function. The proper use of this function is
+     in test_classifier.py Please refer to this program prior to using the 
+     classifier() function to classify images in this function 
+     Parameters: 
+      images_dir - The (full) path to the folder of images that are to be
+                   classified by pretrained CNN models (string)
+      petlabel_dic - Dictionary that contains the pet image(true) labels
+                     that classify what's in the image, where its' key is the
+                     pet image filename & it's value is pet image label where
+                     label is lowercase with space between each word in label 
+      model - pretrained CNN whose architecture is indicated by this parameter,
+              values must be: resnet alexnet vgg (string)
+     Returns:
+      results_dic - Dictionary with key as image filename and value as a List 
+             (index)idx 0 = pet image label (string)
+                    idx 1 = classifier label (string)
+                    idx 2 = 1/0 (int)   where 1 = match between pet image and 
+                    classifer labels and 0 = no match between labels
+    """
+    # Creates dictionary that will have all the results key = filename
+    # value = list [Pet Label, Classifier Label, Match(1=yes,0=no)]
+    results_dic = dict()
 
-   # Process all files in the petlabels_dic - use images_dir to give fullpath
-   for key in petlabel_dic:
+    # Process all files in the petlabels_dic - use images_dir to give fullpath
+    for key in petlabel_dic:
        
        # Runs classifier function to classify the images classifier function 
        # inputs: path + filename  and  model, returns model_label 
@@ -213,27 +224,38 @@ def classify_images(images_dir, petlabel_dic, model):
            if key not in results_dic:
                results_dic[key] = [truth, model_label, 0]
                
-   # Return results dictionary
-   return(results_dic)
+    # Return results dictionary
+    return(results_dic)
 
 
-# adjust_results4_isadog(results_dic, dogsfile) -  Adjusts the results 
-# dictionary to determine if classifier correctly classified images 'as a dog'
-# or 'not a dog' especially when not an match. Demonstrates if model 
-# architecture correctly classifies dog images even if it gets dog breed wrong
-# @param results_dic - Dictionary with key = image filename  
-#             value = list[pet image label, classifier label, 1/0, 1/0*, 1/0**] 
-#             For 1/0 where 1 = match between pet image and classifer labels &  
-#             0 = no match.  1/0* and 1/0** added by this function.
-#             For 1/0* where 1 = pet image is a dog & 0 = pet Image is NOT a 
-#             dog.  For 1/0** 1 = Classifier classifies image as a dog &
-#             0 = Classifier classifies image as NOT a dog.
-# @param dogsfile - text file that contains names of all dogs from ImageNet 
-#                   1000 labels (used by classifier model) and dog names from
-#                   the pet image files. This file has one dog name per line
-#                   dog names are all in lowercase with spaces separating the 
-#                   distinct words of the dogname. 
 def adjust_results4_isadog(results_dic, dogsfile):
+    """
+    Adjusts the results dictionary to determine if classifier correctly 
+    classified images 'as a dog' or 'not a dog' especially when not a match. 
+    Demonstrates if model architecture correctly classifies dog images even if
+    it gets dog breed wrong (not a match).
+    Parameters:
+      results_dic - Dictionary with key as image filename and value as a List 
+             (index)idx 0 = pet image label (string)
+                    idx 1 = classifier label (string)
+                    idx 2 = 1/0 (int)  where 1 = match between pet image and 
+                            classifer labels and 0 = no match between labels
+                    --- where idx 3 & idx 4 are added by this function ---
+                    idx 3 = 1/0 (int)  where 1 = pet image 'is-a' dog and 
+                            0 = pet Image 'is-NOT-a' dog. 
+                    idx 4 = 1/0 (int)  where 1 = Classifier classifies image 
+                            'as-a' dog and 0 = Classifier classifies image  
+                            'as-NOT-a' dog.
+     dogsfile - A text file that contains names of all dogs from ImageNet 
+                1000 labels (used by classifier model) and dog names from
+                the pet image files. This file has one dog name per line
+                dog names are all in lowercase with spaces separating the 
+                distinct words of the dogname. This file should have been
+                passed in as a command line argument. (string - indicates 
+                text file's name)
+    Returns:
+           None - results_dic is mutable data type so no return needed.
+    """           
     # Creates dognames dictionary for quick matching to results_dic labels from
     # real answer & classifier's answer
     dognames_dic = dict()
@@ -295,23 +317,30 @@ def adjust_results4_isadog(results_dic, dogsfile):
                 results_dic[key].extend((0, 0))
 
 
-# calculates_results_stats(results_dic) -  Calculates statistics
-# of the results of the run using classifier's model architecture on 
-# classifying images. Then puts the results statistics in a dictionary 
-# (results_stats) so that it's returned for printing to help determine the 
-# 'best' model for classifying images. results_stats dictionary has 
-# key = statistic's name & value = statistic's value  
-# @param results_dic - Dictionary with key = image filename
-#             value = list[pet image label, classifier label, 1/0, 1/0*, 1/0**]
-#             For 1/0 where 1 = match between pet image and classifer labels &
-#             0 = no match.
-#             For 1/0* where 1 = pet image is a dog & 0 = pet Image is NOT a
-#             dog.
-#             For 1/0** 1 = Classifier classifies image as a dog &
-#             0 = Classifier classifies image as NOT a dog.
-# @return results_stats - Dictionary with key = statistic's name value = 
-#                      statistics value 
 def calculates_results_stats(results_dic):
+    """
+    Calculates statistics of the results of the run using classifier's model 
+    architecture on classifying images. Then puts the results statistics in a 
+    dictionary (results_stats) so that it's returned for printing as to help
+    the user to determine the 'best' model for classifying images. Note that 
+    the statistics calculated as the results are either percentages or counts.
+    Parameters:
+      results_dic - Dictionary with key as image filename and value as a List 
+             (index)idx 0 = pet image label (string)
+                    idx 1 = classifier label (string)
+                    idx 2 = 1/0 (int)  where 1 = match between pet image and 
+                            classifer labels and 0 = no match between labels
+                    idx 3 = 1/0 (int)  where 1 = pet image 'is-a' dog and 
+                            0 = pet Image 'is-NOT-a' dog. 
+                    idx 4 = 1/0 (int)  where 1 = Classifier classifies image 
+                            'as-a' dog and 0 = Classifier classifies image  
+                            'as-NOT-a' dog.
+    Returns:
+     results_stats - Dictionary that contains the results statistics (either a
+                     percentage or a count) where the key is the statistic's 
+                     name (starting with 'pct' for percentage or 'n' for count)
+                     and the value is the statistic's value 
+    """
     # creates empty dictionary for results_stats
     results_stats=dict()
     
@@ -383,31 +412,39 @@ def calculates_results_stats(results_dic):
     return results_stats
 
 
-# print_results(results_dic, results_stats, model,
-#               print_incorrect_dogs = False, print_incorrect_breed = False) -
-# Prints summary results on the classification and then prints incorrectly 
-# classified dogs and incorrectly classified dog breeds if user indicates 
-# they want those printouts (use non-default values)
-# @param results_dic - Dictionary with key = image filename
-#             value = list[pet image label, classifier label, 1/0, 1/0*, 1/0**]
-#             For 1/0 where 1 = match between pet image and classifer labels &
-#             0 = no match.
-#             For 1/0* where 1 = pet image is a dog & 0 = pet Image is NOT a
-#             dog.
-#             For 1/0** 1 = Classifier classifies image as a dog &
-#             0 = Classifier classifies image as NOT a dog.
-# @param results_stats - Dictionary with key = statistic's name value =
-#                      statistics value 
-# @param model - pretrained CNN whose architecture is indicated by this 
-#                parameter, choices are: resnet, alexnet, vgg
-# @param print_incorrect_dogs - Boolean - True prints incorrectly classified 
-#                               dog images default = False (no print) 
-# @param print_incorrect_breed - Boolean - True prints incorrectly classified 
-#                               dog breeds default = False (no print)
 def print_results(results_dic, results_stats, model, 
                   print_incorrect_dogs = False, print_incorrect_breed = False):
+    """
+    Prints summary results on the classification and then prints incorrectly 
+    classified dogs and incorrectly classified dog breeds if user indicates 
+    they want those printouts (use non-default values)
+    Parameters:
+      results_dic - Dictionary with key as image filename and value as a List 
+             (index)idx 0 = pet image label (string)
+                    idx 1 = classifier label (string)
+                    idx 2 = 1/0 (int)  where 1 = match between pet image and 
+                            classifer labels and 0 = no match between labels
+                    idx 3 = 1/0 (int)  where 1 = pet image 'is-a' dog and 
+                            0 = pet Image 'is-NOT-a' dog. 
+                    idx 4 = 1/0 (int)  where 1 = Classifier classifies image 
+                            'as-a' dog and 0 = Classifier classifies image  
+                            'as-NOT-a' dog.
+      results_stats - Dictionary that contains the results statistics (either a
+                     percentage or a count) where the key is the statistic's 
+                     name (starting with 'pct' for percentage or 'n' for count)
+                     and the value is the statistic's value 
+      model - pretrained CNN whose architecture is indicated by this parameter,
+              values must be: resnet alexnet vgg (string)
+      print_incorrect_dogs - True prints incorrectly classified dog images and 
+                             False doesn't print anything(default) (bool)  
+      print_incorrect_breed - True prints incorrectly classified dog breeds and 
+                              False doesn't print anything(default) (bool) 
+    Returns:
+           None - simply printing results.
+    """    
     # Prints summary statistics over the run
-    print("\n\n*** Results Summary for CNN Model Architecture",model.upper(),"***")
+    print("\n\n*** Results Summary for CNN Model Architecture",model.upper(), 
+          "***")
     print("%20s: %3d" % ('N Images', results_stats['n_images']))
     print("%20s: %3d" % ('N Dog Images', results_stats['n_dogs_img']))
     print("%20s: %3d" % ('N Not-Dog Images', results_stats['n_notdogs_img']))
@@ -458,6 +495,6 @@ def print_results(results_dic, results_stats, model,
                 
                 
                 
-# Call to main function to run the program.
-main()
-
+# Call to main function to run the program
+if __name__ == "__main__":
+    main()
