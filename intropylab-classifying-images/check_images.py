@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # */AIPND/intropylab-classifying-images/check_images_solution.py
 #                                                                             
-# TODO: Fillin your information in the programming header below
+# TODO: 1. Fill in your information in the programming header below
 # PROGRAMMER:
 # DATE CREATED:
 # REVISED DATE:             <=(Date Revised - if any)
