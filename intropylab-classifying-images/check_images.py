@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # */AIPND/intropylab-classifying-images/check_images_solution.py
 #                                                                             
-# TODO: 1. Fill in your information in the programming header below
+# TODO: 0. Fill in your information in the programming header below
 # PROGRAMMER:
 # DATE CREATED:
 # REVISED DATE:             <=(Date Revised - if any)
@@ -64,10 +64,10 @@ def main():
     # by collecting end time
     end_time = None
 
-    # TODO: 1. Define tot_time to computes overall run time in
+    # TODO: 1. Define tot_time to computes overall runtime in
     # seconds & prints it in hh:mm:ss format
     tot_time = None
-    print("\n** Total Elapsed Run Time:", tot_time)
+    print("\n** Total Elapsed Runtime:", tot_time)
 
 
 

@@ -26,14 +26,14 @@ def main():
     # Sets end time
     end_time = time()
 
-    # Computes overall run time in seconds
+    # Computes overall runtime in seconds
     tot_time = end_time - start_time
     
-    # Prints overall run time in seconds
-    print("\nTotal Elapsed Run time:", tot_time, "in seconds.")
+    # Prints overall runtime in seconds
+    print("\nTotal Elapsed Runtime:", tot_time, "in seconds.")
            
-    # Prints overall run time in format hh:mm:ss
-    print("\nTotal Elapsed Run time:", str( int( (tot_time / 3600) ) ) + ":" + 
+    # Prints overall runtime in format hh:mm:ss
+    print("\nTotal Elapsed Runtime:", str( int( (tot_time / 3600) ) ) + ":" + 
           str( int(  ( (tot_time % 3600) / 60 )  ) ) + ":" + 
           str( int( ( (tot_time % 3600) % 60 ) ) ) )
                        

@@ -51,12 +51,12 @@ def main():
     # and breeds if requested
     print_results(result_dic, results_stats_dic, in_arg.arch, True, True)
     
-    # Measure total program run time by collecting end time
+    # Measure total program runtime by collecting end time
     end_time = time()
     
-    # Computes overall run time in seconds & prints it in hh:mm:ss format
+    # Computes overall runtime in seconds & prints it in hh:mm:ss format
     tot_time = end_time - start_time
-    print("\n** Total Elapsed Run Time:",
+    print("\n** Total Elapsed Runtime:",
           str(int((tot_time/3600)))+":"+str(int((tot_time%3600)/60))+":"
           +str(int((tot_time%3600)%60)) )
     
