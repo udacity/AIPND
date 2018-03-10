@@ -34,5 +34,6 @@ def main():
     print("Argument 1:", in_args.dir, "  Argument 2:", in_args.num)
 
                        
-# Call to main function to run the program.
-main()
+# Call to main function to run the program
+if __name__ == "__main__":
+    main()

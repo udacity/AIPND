@@ -75,5 +75,6 @@ def main():
     print("\nFilename=", pet_image, "   Label=", pet_name)
         
         
-# Call to main function to run the program.
-main()
+# Call to main function to run the program
+if __name__ == "__main__":
+    main()
