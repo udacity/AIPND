@@ -34,14 +34,15 @@ def main():
     items_in_dic = len(pet_dic)
     print("\nEmpty Dictionary pet_dic - n items=", items_in_dic)
     
-    # Adds new key-value pair to dictionary ONLY when key doesn't already exist
-    key = "beagle_0239.jpg"
-    value = "beagle"
-    if key not in pet_dic:
-        pet_dic[key] = value
-    else:
-        print("** Warning: Key=", key, "already exists in pet_dic with value ="
-              , pet_dic[key])
+    # Adds new key-value pairs to dictionary ONLY when key doesn't already exist
+    keys = ["beagle_0239.jpg", "Boston_terrier_02259.jpg"]
+    values = ["beagle", "boston terrier"]
+    for idx in range(0, len(keys), 1):
+        if keys[idx] not in pet_dic:
+            pet_dic[keys[idx]] = values[idx]
+        else:
+            print("** Warning: Key=", keys[idx], 
+                  "already exists in pet_dic with value =", pet_dic[keys[idx]])
     
     #Iterating through a dictionary printing all keys & their associated values
     print("\nPrinting all key-value pairs in dictionary pet_dic:")
