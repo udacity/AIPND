@@ -358,8 +358,8 @@ def calculates_results_stats(results_dic):
         if results_dic[key][2] == 1:
             results_stats['n_match'] += 1
             
-            # Pet Image Label is a Dog AND Labels match- counts correct breed
-            if results_dic[key][3] == 1:
+        # Pet Image Label is a Dog AND Labels match- counts Correct Breed
+        if sum(results_dic[key][2:]) == 3:
                 results_stats['n_correct_breed'] += 1
         
         # Pet Image Label is a Dog - counts number of dog images
@@ -467,13 +467,9 @@ def print_results(results_dic, results_stats, model,
         # process through results dict, printing incorrectly classified dogs
         for key in results_dic:
 
-            # Pet Image Label is a Dog - Classified as NOT-A-DOG
-            if results_dic[key][3] == 1 and results_dic[key][4] == 0:
-                print("Real: %-26s   Classifier: %-30s" % (results_dic[key][0],
-                                                          results_dic[key][1]))
-                    
-            # Pect Image Label is NOT-a-Dog - Classified as a-DOG
-            if results_dic[key][3] == 0 and results_dic[key][4] == 1:
+            # Pet Image Label is a Dog - Classified as NOT-A-DOG -OR- 
+            # Pet Image Label is NOT-a-Dog - Classified as a-DOG
+            if sum(results_dic[key][3:]) == 1:
                 print("Real: %-26s   Classifier: %-30s" % (results_dic[key][0],
                                                           results_dic[key][1]))
 
@@ -488,8 +484,8 @@ def print_results(results_dic, results_stats, model,
         for key in results_dic:
 
             # Pet Image Label is-a-Dog, classified as-a-dog but is WRONG breed
-            if (results_dic[key][3] == 1 and results_dic[key][4] == 1 and
-                results_dic[key][2] == 0):
+            if ( sum(results_dic[key][3:]) == 2 and
+                results_dic[key][2] == 0 ):
                 print("Real: %-26s   Classifier: %-30s" % (results_dic[key][0],
                                                           results_dic[key][1]))
                 
