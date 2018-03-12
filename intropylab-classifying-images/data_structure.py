@@ -66,9 +66,9 @@ def main():
         if sum(results_dic[key][2:]) == 3:
             print("*Breed Match*")
         if sum(results_dic[key][3:]) == 2:
-            print("*Dog Match*")
+            print("*Is-a-Dog Match*")
         if sum(results_dic[key][3:]) == 0 and results_dic[key][2] == 1:
-            print("*NOT Dog Match*")
+            print("*NOT-a-Dog Match*")
             
 
 
