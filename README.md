@@ -4,12 +4,12 @@ This repository contains code and associated files for the AI Programming with P
 ## Table Of Contents
 
 ### Tutorial Notebooks
-* Vectors => [Git LA Vectors Lab]( https://github.com/udacity/linear-algebra/tree/master/vectors_lab "Git LA Vectors Repo")
-* Matrix Multiplication => [Git LA Matrix Multiplication]( https://github.com/udacity/linear-algebra/tree/master/matrixMultiplication "Git LA Matrix Mult Repo")
-* Linear Combination [Git LA Linear Combination]( https://github.com/udacity/linear-algebra/tree/master/linearCombination "Git LA Linear Combo Repo" )
-
+* Linear Algebra Essentials
+    * [Vectors Lab](https://github.com/udacity/AIPND/tree/master/linearalgebra-vectors_lab "Vectors Lab") Learn how to graph 2D vectors.
+    * [Linear Combination Lab](https://github.com/udacity/AIPND/tree/master/linearalgebra-linear_lab "Linear Combination Lab") Learn how to computationally determine a vector's span and solve a simple system of equations.
+    * [Linear Mapping](https://github.com/udacity/AIPND/tree/master/linearalgebra-linear_lab "Linear Mapping Labs") Learn how to solve some problems computationally using vectors and matrices.
 ### Programming Labs
-* [Intro to Python Lab - Classifying Images:](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images "Classifying Images Lab") Determine which CNN architecture model works best at classifying images of dogs and their breeds.
+* [Intro to Python Lab - Classifying Images Lab:](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images "Classifying Images Lab") Determine which CNN architecture model works best at classifying images of dogs and their breeds.
 
 **REMOVE 'Projects' if not applicable**
 ### Projects
