@@ -11,9 +11,6 @@ This repository contains code and associated files for the AI Programming with P
 ### Programming Labs
 * [Intro to Python Lab - Classifying Images Lab:](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images "Classifying Images Lab") Determine which CNN architecture model works best at classifying images of dogs and their breeds.
 
-**REMOVE 'Projects' if not applicable**
-### Projects
-* Image Classifier: Build a Python application that trains an image classifier on a dataset, then predicts new images using the trained model.
 
 ## Dependencies
 
@@ -23,6 +20,3 @@ Each directory has a `requirements.txt` describing the minimal dependencies requ
 
 To install these dependencies with pip, you can issue `pip3 install -r requirements.txt`.
 
-### Conda Environments
-
-You can find Conda environment files for the Linear Algebra Course in the `environments` folder. Note that environment files are platform dependent. - may be removed if not applicable.
