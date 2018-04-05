@@ -6,8 +6,8 @@ This repository contains code and associated files for the AI Programming with P
 ### Tutorial Notebooks
 * Linear Algebra Essentials
     * [Vectors Lab](https://github.com/udacity/AIPND/tree/master/linearalgebra-vectors_lab "Vectors Lab") Learn how to graph 2D vectors.
-    * [Linear Combination Lab](https://github.com/udacity/AIPND/tree/master/linearalgebra-linear_lab "Linear Combination Lab") Learn how to computationally determine a vector's span and solve a simple system of equations.
-    * [Linear Mapping](https://github.com/udacity/AIPND/tree/master/linearalgebra-linear_lab "Linear Mapping Labs") Learn how to solve some problems computationally using vectors and matrices.
+    * [Linear Combination Lab](https://github.com/udacity/AIPND/tree/master/linearalgebra-linear_combination "Linear Combination Lab") Learn how to computationally determine a vector's span and solve a simple system of equations.
+    * [Linear Mapping](https://github.com/udacity/AIPND/tree/master/linearalgebra-linear_mapping "Linear Mapping Labs") Learn how to solve some problems computationally using vectors and matrices.
 ### Programming Labs
 * [Intro to Python Lab - Classifying Images Lab:](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images "Classifying Images Lab") Determine which CNN architecture model works best at classifying images of dogs and their breeds.
 
