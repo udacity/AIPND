@@ -37,3 +37,9 @@ data_transpose = tuple(zip(data[0], data[1], data[2], data[3]))
 ```
 
 We can also do it in a nicer way using *unpacking*. If you write `*data` in the function argument, it will unpack each element in `data` and pass each of the elements as an argument to the function. So, `zip(*data)` is a shorter way to write `zip(data[0], data[1], data[2], data[3])`. However the second option only works if `data` has 4 elements, while `zip(*data)` will work regardless of the length of `data`.
+
+So then, the general way to do this which works with any size tuple similar to `data` is
+
+```python
+tuple(zip(*data))
+```
