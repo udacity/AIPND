@@ -10,7 +10,8 @@ This repository contains code and associated files for the AI Programming with P
     * [Linear Mapping](https://github.com/udacity/AIPND/tree/master/linearalgebra-linear_mapping "Linear Mapping Labs") Learn how to solve some problems computationally using vectors and matrices.
 ### Programming Labs
 * [Intro to Python Lab - Classifying Images Lab:](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images "Classifying Images Lab") Determine which CNN architecture model works best at classifying images of dogs and their breeds.
-
+### Quiz Notes
+* [Notes:](https://github.com/udacity/AIPND/tree/master/notes "Notes") This directory contains more information about certain quizzes that are testing more challenging concepts. The filename indicates which _quiz_ the note is covering. Click on the filename to view the contents of the note.
 
 ## Dependencies
 
