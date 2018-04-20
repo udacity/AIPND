@@ -1,27 +1,39 @@
 #  Notes: Frequently Asked Questions for Classifying Images Lab
 These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to Python_**, **_Lesson 6. Lab: Classify Images_** that were posted and addressed on AIPND slack. We recommend that you review these notes prior to starting the **_Classify Images Lab_** to help clarify potential points of confusion regarding the lab.
+&nbsp;
+&nbsp;
+&nbsp;
+## Approaching and Completing the Lab
+This lab provides the student with the experience of solving a much larger, more complex problem using python. This lab will require the student write a few hundred lines of code as compared to the fewer lines of code needed to complete the quizzes of the lessons. This lab will increase a student's experience using python to solve a complex problem, especially for students that are newer to python and software engineering. Additionally, this lab should better prepare students for completing the project. The percent viewed of the lab has no bearing upon student graduation from the ND; therefore, students are free to use as much or as little _help_ as they need from the materials provided.
 
+To best address all levels of experience with programming and python, the lab may contain more information than is needed to complete the lab for some more experienced students. The instructor suggests students focus on the top part of each section of the lab labeled **_Coding within the check_images.py_**. This part provides: which parts of _check_images.py_ students will be editing with **_Code to Edit_**, the expected outcome once the edits are complete with **_Expected Outcome_**, and how to best check your edits with **_Checking your code_**.  
 
+All parts of the section after **_Coding within the check_images.py_**, are there to provide students more information and code about python modules that were used in the instructor solution for the section, information about files and functions the instructor solution used in the section, the GitHub repository link to code displayed in the section in **_Code_**, and the solutions video in **_Solutions Video_**.  Be aware that some times more information is provided than will be used in the solution as a means to provide complete examples that aren't necessarily the exact same as those that will be used in the lab. 
+&nbsp;
+&nbsp;
 ## Running the Lab on a Local Computer
 While it is recommended that you work on the lab within the **_5. Lab Workspace_**, to run the lab on a local computer, you will have needed to have python 3.6 intalled on your computer. 
 ### Installing Anaconda 
 The easiest way to install python and the appropriate python modules is to install [Anaconda](https://www.anaconda.com/download). You will also have found the directions to install Anaconda in **_2. Intro to Python_**, **_Lesson 5. Scripting_**, **_Section 3. Install Python Using Anaconda_**. 
 ### Installing PyTorch and torchvision
-For this lab you will also need to install the python packages pytorch and torchvision.  If your local computer has a Linux or OSX (Mac) operating system look to [*Get Started.*](http://pytorch.org/) for installation instructions. Although not designed to run on a Windows operating system the following have succeeded with installation for student and instructors.
-#### Windows 7
+#### Linux or OSX(Mac)
+For this lab you will also need to install the python packages pytorch and torchvision.  If your local computer has a Linux or OSX (Mac) operating system look to [*Get Started.*](http://pytorch.org/) for installation instructions. 
+#### Windows 
+Although not designed to run on a Windows operating system the following have succeeded with installation for student and instructors.
+##### Windows 7
 ```terminal
 conda install -c peterjc123 pytorch-cpu
 pip install torchvision
 ```
-#### Windows 10
+##### Windows 10
 With acknowledgement to Giu of the April Cohort for providing the installation commands.
 ```terminal
 conda install -c peterjc123 pytorch cuda90
 pip install torchvision
 ```
 With acknowledgement to Oliver E. of the April Cohort for providing alternative methods to run the pytorch and torchvision on Windows 10 using Linux environment. Other options are to install Windows Substyem for Linux (WSL) or VMware to install Linux on a virtual environment. For directions for [installation of WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and for [installation of VMware](http://partnerweb.vmware.com/GOSIG/Windows_10.html#installation). 
-
-
+&nbsp;
+&nbsp;
 ## Files Required to Run **_check_images.py_** program on a Local Computer
 The following files and folders need to be put in the same folder as the **_check_images.py_** python program on your local computer. You will find these files and folders within the [GitHub AIPND Repository](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images). There are more programs in the repository than you will need, these extra programs are there to provide the code within the lessons in a format that can be copied and pasted from.
 ### Needed Files:
@@ -35,14 +47,6 @@ The following files and folders need to be put in the same folder as the **_chec
 Also be aware the instructor provided solution also exists within the GitHub repository as the file **_check_images_solution.py_** and the file **_run_models_batch_solution.sh_** can be used to run the instructor solution for all 3 model architectures.
 
 
-## Approaching and Completing the Lab
-This lab provides the student with the experience of solving a much larger, more complex problem using python. This lab will require the student write a few hundred lines of code as compared to the fewer lines of code needed to complete the quizzes of the lessons. This experience should help increase a students experience using python and solving more complex problems for those students newer to python and software engineering. Additionally, the experience of solving larger more complex problems in python should better prepare students for solving the project for this ND. 
-
-To best address all levels of experience with programming and python, the lab may contain more information than is needed to complete the lab for some more experienced students. The instructor suggests students focus on the top part of each section of the lab labeled **_Coding within the check_images.py_**. This part provides: which parts of _check_images.py_ students will be editing with **_Code to Edit_**, the expected outcome once the edits are complete with **_Expected Outcome_**, and how to best check your edits with **_Checking your code_**.  
-
-All parts of the section after **_Coding within the check_images.py_**, are there to provide students more information and code about python modules that were used in the instructor solution for the section, information about files and functions the instructor solution used in the section, the GitHub repository link to code displayed in the section in **_Code_**, and the solutions video in **_Solutions Video_**.  Be aware that some times more information is provided than will be used in the solution as a means to provide complete examples that aren't necessarily the exact same as those that will be used in the lab. 
-
-Students can choose from completing the lab totally independently from the _help_ provided to following along closely with the material in each section and using the solutions video and solutions code (in the GitHub Repository) to double check their answers with the instructor provided solution. It is up to each individual student to decide how much _help_ they want to use to and to what level they want to complete the assignment.  The percent viewed of the lab has no bearing on student graduation from the ND; so students are free to use as much or as little _help_ as they need from the materials provided.
 
 
 ## Forking the GitHub Respository for solution display and debugging
