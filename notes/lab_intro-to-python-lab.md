@@ -1,5 +1,5 @@
 #  Notes: Frequently Asked Questions for Classifying Images Lab
-These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to Python_**, **_ Lesson 6. Lab: Classify Images_** that were posted and addressed on AIPND slack. We recommend that you review these notes prior to starting the **_Classify Images Lab_** to help clarify potential points of confusion regarding the lab.
+These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to Python_**, **_Lesson 6. Lab: Classify Images_** that were posted and addressed on AIPND slack. We recommend that you review these notes prior to starting the **_Classify Images Lab_** to help clarify potential points of confusion regarding the lab.
 
 
 ## Running the Lab on a Local Computer
@@ -21,12 +21,12 @@ With acknowledgement to Oliver E. of the April Cohort for providing alternative 
 ## Files Required to Run **_check_images.py_** program on a Local Computer
 The following files and folders need to be put in the same folder as the **_check_images.py_** python program on your local computer. You will find these files and folders within the [GitHub AIPND Repository](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images). There are more programs in the repository than you will need, these extra programs are there to provide the code within the lessons in a format that can be copied and pasted from.
 ### Needed Files:
-**pet_images**  (Folder of 40 pet image)
-**classifier.py** ( classifier function you will be using to classify the images)
-**dognames.txt** (file that contains all the valid dog names from the classifier function and the pet image files)
-**imagenet1000_clsid_to_human.txt** ( dictionary that converts classifier function ids to text labels)
-**run_models_batch.sh** ( a bash script that will run check_images.py sequentially for all 3 model architectures and output their results to text files)
-**test_classifier.py** (an example program that demonstrates how to use the classifier function)
+* **pet_images**  (Folder of 40 pet image)
+* **classifier.py** ( classifier function you will be using to classify the images)
+* **dognames.txt** (file that contains all the valid dog names from the classifier function and the pet image files)
+* **imagenet1000_clsid_to_human.txt** ( dictionary that converts classifier function ids to text labels)
+* **run_models_batch.sh** ( a bash script that will run check_images.py sequentially for all 3 model architectures and output their results to text files)
+* **test_classifier.py** (an example program that demonstrates how to use the classifier function)
 
 Also be aware the instructor provided solution also exists within the GitHub repository as the file **_check_images_solution.py_** and the file **_run_models_batch_solution.sh_** can be used to run the instructor solution for all 3 model architectures.
 
