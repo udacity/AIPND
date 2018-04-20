@@ -1,10 +1,10 @@
 #  Notes: Frequently Asked Questions for Classifying Images Lab
 These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to Python_**, **_Lesson 6. Lab: Classify Images_** that were posted and addressed on AIPND slack. We recommend that you review these notes prior to starting the **_Classify Images Lab_** to help clarify potential points of confusion regarding the lab.
-&nbsp; 
-&nbsp;
-&nbsp;
 &nbsp;  
-  
+&nbsp; 
+&nbsp; 
+&nbsp;   
+   
 ## Approaching and Completing the Lab
 This lab provides the student with the experience of solving a much larger, more complex problem using python. This lab will require the student write a few hundred lines of code as compared to the fewer lines of code needed to complete the quizzes of the lessons. This lab will increase a student's experience using python to solve a complex problem, especially for students that are newer to python and software engineering. Additionally, this lab should better prepare students for completing the project. The percent viewed of the lab has no bearing upon student graduation from the ND; therefore, students are free to use as much or as little _help_ as they need from the materials provided.
 
@@ -61,8 +61,8 @@ We recommend forking the [github repository for AIPND](https://github.com/udacit
 &nbsp;
 &nbsp;   
  
-## Eliminating Syntax errors with Text Editor/Integrated Development Environment (IDE) 
-If you are experiencing a lot of syntax errors with your code, you may consider downloading your code and looking at it with your favorite text editor/IDE to help eliminate the syntax errors from your program.  Recall in **_2. Intro to Python_**, **_Lesson 5. Scripting_**, **_Section 6. Programming Environment Setup_** you were provided with a number of text editors that are available to use with python (like _Atom_, _Sublime Text_, _Notepad++_. Additionally, when you installed Anaconda, the Spyder IDE for python should be available through the Anaconda Navigator. 
+## Eliminating Syntax errors with Text Editor/Integrated Development Environment 
+If you are experiencing a lot of syntax errors with your code, you may consider downloading your code and looking at it with your favorite text editor/IDE to help eliminate the syntax errors from your program.  Recall in **_2. Intro to Python_**, **_Lesson 5. Scripting_**, **_Section 6. Programming Environment Setup_** you were provided with a number of text editors that are available to use with python (like _Atom_, _Sublime Text_, _Notepad++_. Additionally, when you installed Anaconda, the Spyder IDE (Integrated Development Environment) for python should be available through the Anaconda Navigator. 
 &nbsp;
 &nbsp;
 &nbsp;   
