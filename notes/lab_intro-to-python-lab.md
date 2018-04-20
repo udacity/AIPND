@@ -3,13 +3,17 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 
 
 ## Running the Lab on a Local Computer
-While it is recommended that you work on the lab within the **_5. Lab Workspace_**, to run the lab on a local computer, you will have needed to have python 3.6 intalled on your computer. The easiest way to install python and the appropriate python modules is to install [Anaconda](https://www.anaconda.com/download). You will also have found the directions to install Anaconda in **_2. Intro to Python_**, **_Lesson 5. Scripting_**, **_Section 3. Install Python Using Anaconda_**. For this lab you will also need to install the python packages pytorch and torchvision.  If your local computer has a Linux or OSX (Mac) operating system look to [*Get Started.*](http://pytorch.org/) for installation instructions. Although not designed to run on a Windows operating system the following have succeeded with installation for student and instructors.
-### Windows 7
+While it is recommended that you work on the lab within the **_5. Lab Workspace_**, to run the lab on a local computer, you will have needed to have python 3.6 intalled on your computer. 
+### Installing Anaconda 
+The easiest way to install python and the appropriate python modules is to install [Anaconda](https://www.anaconda.com/download). You will also have found the directions to install Anaconda in **_2. Intro to Python_**, **_Lesson 5. Scripting_**, **_Section 3. Install Python Using Anaconda_**. 
+### Installing PyTorch and torchvision
+For this lab you will also need to install the python packages pytorch and torchvision.  If your local computer has a Linux or OSX (Mac) operating system look to [*Get Started.*](http://pytorch.org/) for installation instructions. Although not designed to run on a Windows operating system the following have succeeded with installation for student and instructors.
+#### Windows 7
 ```terminal
 conda install -c peterjc123 pytorch-cpu
 pip install torchvision
 ```
-### Windows 10
+#### Windows 10
 With acknowledgement to Giu of the April Cohort for providing the installation commands.
 ```terminal
 conda install -c peterjc123 pytorch cuda90
