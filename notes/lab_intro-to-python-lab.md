@@ -1,16 +1,19 @@
 #  Notes: Frequently Asked Questions for Classifying Images Lab
 These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to Python_**, **_Lesson 6. Lab: Classify Images_** that were posted and addressed on AIPND slack. We recommend that you review these notes prior to starting the **_Classify Images Lab_** to help clarify potential points of confusion regarding the lab.
-&nbsp;
-&nbsp;
-&nbsp;
+&nbsp; 
+&nbsp; 
+&nbsp;   
+&nbsp;  
+
 ## Approaching and Completing the Lab
 This lab provides the student with the experience of solving a much larger, more complex problem using python. This lab will require the student write a few hundred lines of code as compared to the fewer lines of code needed to complete the quizzes of the lessons. This lab will increase a student's experience using python to solve a complex problem, especially for students that are newer to python and software engineering. Additionally, this lab should better prepare students for completing the project. The percent viewed of the lab has no bearing upon student graduation from the ND; therefore, students are free to use as much or as little _help_ as they need from the materials provided.
 
 To best address all levels of experience with programming and python, the lab may contain more information than is needed to complete the lab for some more experienced students. The instructor suggests students focus on the top part of each section of the lab labeled **_Coding within the check_images.py_**. This part provides: which parts of _check_images.py_ students will be editing with **_Code to Edit_**, the expected outcome once the edits are complete with **_Expected Outcome_**, and how to best check your edits with **_Checking your code_**.  
 
 All parts of the section after **_Coding within the check_images.py_**, are there to provide students more information and code about python modules that were used in the instructor solution for the section, information about files and functions the instructor solution used in the section, the GitHub repository link to code displayed in the section in **_Code_**, and the solutions video in **_Solutions Video_**.  Be aware that some times more information is provided than will be used in the solution as a means to provide complete examples that aren't necessarily the exact same as those that will be used in the lab. 
-&nbsp;
-&nbsp;
+&nbsp; 
+&nbsp; 
+ 
 ## Running the Lab on a Local Computer
 While it is recommended that you work on the lab within the **_5. Lab Workspace_**, to run the lab on a local computer, you will have needed to have python 3.6 intalled on your computer. 
 ### Installing Anaconda 
@@ -32,8 +35,9 @@ conda install -c peterjc123 pytorch cuda90
 pip install torchvision
 ```
 With acknowledgement to Oliver E. of the April Cohort for providing alternative methods to run the pytorch and torchvision on Windows 10 using Linux environment. Other options are to install Windows Substyem for Linux (WSL) or VMware to install Linux on a virtual environment. For directions for [installation of WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and for [installation of VMware](http://partnerweb.vmware.com/GOSIG/Windows_10.html#installation). 
-&nbsp;
-&nbsp;
+&nbsp; 
+&nbsp; 
+  
 ## Files Required to Run **_check_images.py_** program on a Local Computer
 The following files and folders need to be put in the same folder as the **_check_images.py_** python program on your local computer. You will find these files and folders within the [GitHub AIPND Repository](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images). There are more programs in the repository than you will need, these extra programs are there to provide the code within the lessons in a format that can be copied and pasted from.
 ### Needed Files:
