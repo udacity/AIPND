@@ -8,7 +8,7 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 * [Approaching and Completing the Lab](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#approaching-and-completing-the-lab)
 * [Running the Lab on a Local Computer](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer)
 * [Files Required to Run **_check_images.py_** Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#files-required-to-run-check_imagespy-locally)
-* [How to Run **_run_models_batch_**  and **_run_models_batch_solution_** on Windows OS Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#files-required-to-run-check_imagespy-locally)
+* [Running Batch Files on Windows OS Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-batch-files-on-windows-os-locally)
 * [Forking the GitHub Respository for Solution display and debugging](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#forking-the-github-respository-for-solution-display-and-debugging)
 * [Eliminating Syntax Errors with Text Editor/Integrated Development Environment](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#eliminating-syntax-errors-with-text-editorintegrated-development-environment)
 * [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#cutting-and-pasting-code-in-the-classroom)
@@ -77,7 +77,7 @@ Also be aware the instructor provided solution also exists within the GitHub rep
 &nbsp;   
 &nbsp;     
      
-## Running batch files on Windows OS Locally
+## Running Batch Files on Windows OS Locally
 To run the files **_run_models_batch_** and **_run_models_batch_solution_** that run all 3 model architectures using **_check_images.py_** or **_check_images_solution.py_** on a Windows OS locally; you will need to use the files that end with the extention **_.bat_** instead of the extension **_.sh_**. 
 ### Directions:
 * Open the **Anaconda Prompt** - either from typing **_Anaconda Prompt_** within the search bar and selecting it _or_ by clicking on it once it's found within the **Anaconda** folder of programs.
