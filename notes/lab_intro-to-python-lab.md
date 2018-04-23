@@ -77,12 +77,12 @@ Also be aware the instructor provided solution also exists within the GitHub rep
 &nbsp;   
 &nbsp;     
      
-## How to Run **_run_models_batch_**  and **_run_models_batch_solution_** on Windows OS Locally
+## Running batch files on Windows OS Locally
 To run the files **_run_models_batch_** and **_run_models_batch_solution_** that run all 3 model architectures using **_check_images.py_** or **_check_images_solution.py_** on a Windows OS locally; you will need to use the files that end with the extention **_.bat_** instead of the extension **_.sh_**. 
 ### Directions:
-* Open the **Anaconda Prompt** - either from typing **_Anaconda Prompt_** within the search bar and selecting it or clicking on it once it is found within **Anaconda** folder of programs.
+* Open the **Anaconda Prompt** - either from typing **_Anaconda Prompt_** within the search bar and selecting it _or_ by clicking on it once it's found within the **Anaconda** folder of programs.
 * Navigate to the _folder_ within the **Anaconda Prompt** that contains the _Lab files_ including **_check_images.py_** and **_run_models_batch.bat_** using the command [_cd_](https://en.wikipedia.org/wiki/Cd_(command)).
-* Type command within **Anaconda Prompt**:
+* Type the command within the **Anaconda Prompt**:
 ```terminal
 run_models_batch.bat
 ```
