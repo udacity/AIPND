@@ -8,6 +8,7 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 * [Approaching and Completing the Lab](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#approaching-and-completing-the-lab)
 * [Running the Lab on a Local Computer](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer)
 * [Files Required to Run **_check_images.py_** Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#files-required-to-run-check_imagespy-locally)
+* [How to Run **_run_models_batch_**  and **_run_models_batch_solution_** on Windows OS Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#files-required-to-run-check_imagespy-locally)
 * [Forking the GitHub Respository for Solution display and debugging](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#forking-the-github-respository-for-solution-display-and-debugging)
 * [Eliminating Syntax Errors with Text Editor/Integrated Development Environment](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#eliminating-syntax-errors-with-text-editorintegrated-development-environment)
 * [Cutting and Pasting Code in the Classroom](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#cutting-and-pasting-code-in-the-classroom)
@@ -21,9 +22,20 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 ## Approaching and Completing the Lab
 This lab provides the student with the experience of solving a much larger, more complex problem using python. This lab will require the student write a few hundred lines of code as compared to the fewer lines of code needed to complete the quizzes of the lessons. This lab will increase a student's experience using python to solve a complex problem, especially for students that are newer to python and software engineering. Additionally, this lab should better prepare students for completing the project. The percent viewed of the lab has no bearing upon student graduation from the ND; therefore, students are free to use as much or as little _help_ as they need from the materials provided.
 
-To best address all levels of experience with programming and python, the lab may contain more information than is needed to complete the lab for some more experienced students. The instructor suggests students focus on the top part of each section of the lab labeled **_Coding within the check_images.py_**. This part provides: which parts of _check_images.py_ students will be editing with **_Code to Edit_**, the expected outcome once the edits are complete with **_Expected Outcome_**, and how to best check your edits with **_Checking your code_**.  
+To best address all levels of experience with programming and python, the lab may contain more information than is needed to complete the lab for some more experienced students. The instructor suggests students focus on the top part of each section of the lab labeled **_Coding within the check_images.py_**. 
 
-All parts of the section after **_Coding within the check_images.py_**, are there to provide students more information and code about python modules that were used in the instructor solution for the section, information about files and functions the instructor solution used in the section, the GitHub repository link to code displayed in the section in **_Code_**, and the solutions video in **_Solutions Video_**.  Be aware that some times more information is provided than will be used in the solution as a means to provide complete examples that aren't necessarily the exact same as those that will be used in the lab. 
+### **_Coding within the check_images.py_** provides:
+* **_Code to Edit_** - The parts of **_check_images.py_** students will be editing for that section
+* **_Expected Outcome_** - The expected outcome once the edits are completed and the program is _run_
+* **_Checking your code_** - How to best check that the _edits_ provided the _expected outcome_. 
+
+### All parts of the section after **_Coding within the check_images.py_** are there to provide:
+* Additional information and code about the python modules that were used in the instructor solution
+* Additonal Information about files and functions the instructor solution used 
+* The GitHub repository link in **_Code_** section to the _code_ displayed within that section
+* The solutions video in **_Solutions Video_**
+
+Be aware that some times more information is provided than will be used in the solution, as a means to provide complete examples that aren't necessarily the exact same as those that will be used in the lab solution. Additonally, the instructor solution breaks certain coding concepts into multiple lines of code as to provide a solution that is easier to understand to the _beginning_ programmer. The instructor solution also contains _data checks_ that verify the data is in proper format prior to it's use within the program.  These are left as examples to the student as techniques that can be used when dealing with _real_ data that may not conform to an expected format.
 &nbsp;   
 &nbsp;   
      
@@ -36,12 +48,12 @@ The easiest way to install python and the appropriate python modules is to insta
 For this lab you will also need to install the python packages pytorch and torchvision.  If your local computer has a Linux or OSX (Mac) operating system look to [*Get Started.*](http://pytorch.org/) for installation instructions. 
 #### Windows 
 Although not designed to run on a Windows operating system the following have succeeded with installation for student and instructors.
-##### Windows 7
+#### Windows 7
 ```terminal
 conda install -c peterjc123 pytorch-cpu
 pip install torchvision
 ```
-##### Windows 10
+#### Windows 10
 With acknowledgement to Giu of the April Cohort for providing the installation commands.
 ```terminal
 conda install -c peterjc123 pytorch cuda90
@@ -61,10 +73,23 @@ The following files and folders need to be put in the same folder as the **_chec
 * **run_models_batch.sh** ( a bash script that will run check_images.py sequentially for all 3 model architectures and output their results to text files)
 * **test_classifier.py** (an example program that demonstrates how to use the classifier function)
 
-Also be aware the instructor provided solution also exists within the GitHub repository as the file **_check_images_solution.py_** and the file **_run_models_batch_solution.sh_** can be used to run the instructor solution for all 3 model architectures.
+Also be aware the instructor provided solution also exists within the GitHub repository as the file **_check_images_solution.py_** and the file **_run_models_batch_solution.sh_** can be used to run the instructor solution for all 3 model architectures in a Unix/Linux/OSX environment from a _terminal_ window or within the _terminal_ window in the _Lab Workspace_.
 &nbsp;   
 &nbsp;     
      
+## How to Run **_run_models_batch_**  and **_run_models_batch_solution_** on Windows OS Locally
+To run the files **_run_models_batch_** and **_run_models_batch_solution_** that run all 3 model architectures using **_check_images.py_** or **_check_images_solution.py_** on a Windows OS locally; you will need to use the files that end with the extention **_.bat_** instead of the extension **_.sh_**. 
+### Directions:
+* Open the **Anaconda Prompt** - either from typing **_Anaconda Prompt_** within the search bar and selecting it or clicking on it once it is found within **Anaconda** folder of programs.
+* Navigate to the _folder_ within the **Anaconda Prompt** that contains the _Lab files_ including **_check_images.py_** and **_run_models_batch.bat_** using the command [_cd_](https://en.wikipedia.org/wiki/Cd_(command)).
+* Type command within **Anaconda Prompt**:
+```terminal
+run_models_batch.bat
+```
+If instead you are running the instructor solution **_check_images_solution.py_** you will replace all instances of **_run_models_batch.bat_** from the direction above with **_run_models_batch_solution.bat_**.
+&nbsp;     
+&nbsp;         
+   
 ## Forking the GitHub Respository for Solution display and debugging
 We recommend forking the [github repository for AIPND](https://github.com/udacity/AIPND) to display your solution and to allow for improved debugging support. For directions on [joining GitHub](https://github.com/join?source=header-home) and for direction on [how to fork a GitHub repository](https://help.github.com/articles/fork-a-repo/). Additionally, forking the repository will enable you to more easily show AIPND instructors and students where you are having difficulty with coding the lab. One can always provide others a link to the code that seems to have errors in their fork.
 &nbsp;   
@@ -105,9 +130,9 @@ When editing the functions provided in **_check_images.py_** you will need to re
 ## Alternative Solution for **_11. Classifying Images - Part 1_**
 With acknowledgement to Shawn M. of the April Cohort for pointing out that the [_in_ operation](https://docs.python.org/3/library/stdtypes.html#common-sequence-operations) also handles string comparison. This led to the discovery of a more simple solution using the [_in_ operation](https://docs.python.org/3/library/stdtypes.html#common-sequence-operations). 
 
-The _in_ operation can be used to find exact match of a string as compared to a list of different strings. Because the classifier function _can_ return a list of terms for a classification (like: _dalmatian, coach dog, carriage dog_); one can use python's [split](https://docs.python.org/3/library/stdtypes.html#str.split) function to split a returned list of terms into a list using the separator _", "_. This way allowing the use of the _in_ operation to determine if a _pet label_ is contained as an _exact_ match to one of the _classifier label's_ terms. 
+The [_in_ operation](https://docs.python.org/3/library/stdtypes.html#common-sequence-operations) can be used to find exact match of a string as compared to a list of different strings. Because the classifier function _can_ return a list of terms for a classification (like: "_dalmatian, coach dog, carriage dog_"); one can use python's [split](https://docs.python.org/3/library/stdtypes.html#str.split) function to split a returned list of terms into a list using the separator _", "_. This way allowing the use of the [_in_ operation](https://docs.python.org/3/library/stdtypes.html#common-sequence-operations) to determine if a _pet label_ is contained as an _exact_ match to one of the _classifier label's_ terms. 
 
-There are cases when a _classifier label_ term that contains at least one word that does match one of our _pet labels_ like: tabby **cat** or egyptian **cat** matching to **cat** or standard **poodle** matching to **poodle**. To address these cases one can use python's [split](https://docs.python.org/3/library/stdtypes.html#str.split) function to split the _classifier label_ term into multiple words and then check for matches using the _in_ operation. 
+There are cases when a _classifier label_ term that contains at least one word that does match one of our _pet labels_ like: a _classifier term_ of tabby **cat** or egyptian **cat** matching to _pet label_ **cat** or _classifier term_ of standard **poodle** matching to _pet label_ **poodle**. To address these cases one can use python's [split](https://docs.python.org/3/library/stdtypes.html#str.split) function to [split](https://docs.python.org/3/library/stdtypes.html#str.split) the _classifier label_ term into multiple words and then check for matches using the [_in_ operation](https://docs.python.org/3/library/stdtypes.html#common-sequence-operations). 
 
 To see the alternative solution look at the github program [**_alternative-to-classify_images.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/alternative-to-classify_images.py). 
 &nbsp;    
