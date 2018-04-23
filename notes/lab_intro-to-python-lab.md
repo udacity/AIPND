@@ -6,6 +6,7 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 ## Quick Links to Frequently Asked Questions 
 * [GitHub AIPND Repository Link](https://github.com/udacity/AIPND)
 * [Approaching and Completing the Lab](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#approaching-and-completing-the-lab)
+* [Issues with the Lab Workspace](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#issues-with-the-lab-workspace)
 * [Running the Lab on a Local Computer](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer)
 * [Files Required to Run **_check_images.py_** Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#files-required-to-run-check_imagespy-locally)
 * [Running Batch Files on Windows OS Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-batch-files-on-windows-os-locally)
@@ -38,6 +39,11 @@ To best address all levels of experience with programming and python, the lab ma
 Be aware that some times more information is provided than will be used in the solution, as a means to provide complete examples that aren't necessarily the exact same as those that will be used in the lab solution. Additonally, the instructor solution breaks certain coding concepts into multiple lines of code as to provide a solution that is easier to understand to the _beginning_ programmer. The instructor solution also contains _data checks_ that verify the data is in proper format prior to it's use within the program.  These are left as examples to the student as techniques that can be used when dealing with _real_ data that may not conform to an expected format.
 &nbsp;   
 &nbsp;   
+      
+## Issues with the Lab Workspace
+While it is recommended that you work on the lab within the **_5. Lab Workspace_**, a few students _may_ experience issues trying to work within the _Lab Workspace_.  Some students in the April cohort found these issues resolved when they switched their internet browser.  Specifically, some student found that **_Chrome_** worked best while others found that **_Firefox_** worked better for them.  If you run into issues with the **_5. Lab Workspace_**, we recommend trying a different internet browser.  AlternativIy, you are welcome to complete the lab on a local computer using the instructions in the next [FAQ](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer). 
+&nbsp;      
+&nbsp;     
      
 ## Running the Lab on a Local Computer
 While it is recommended that you work on the lab within the **_5. Lab Workspace_**, to run the lab on a local computer, you will have needed to have python 3.6 intalled on your computer. 
