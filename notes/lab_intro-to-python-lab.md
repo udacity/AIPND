@@ -55,13 +55,14 @@ The easiest way to install python and the appropriate python modules is to insta
 ### Linux or OSX(Mac)
 For this lab you will also need to install the python packages pytorch and torchvision.  If your local computer has a Linux or OSX (Mac) operating system look to [*Get Started.*](http://pytorch.org/) for installation instructions. 
 ### Windows 
-Although not designed to run on a Windows operating system, the following have succeeded with installation for student and instructors.
-#### Windows 7
+With the release of PyTorch v0.4.0, this version of PyTorch supports installation on the Window Operating Systems. To install PyTorch v0.4.0 or higher look to [*Get Started.*](http://pytorch.org/) for installation instructions.  
+The instructions below are for installing versions of PyTorch that are 0.3.1v or older.  
+#### Windows 7 - for Pytorch v0.3.1 or older
 ```terminal
 conda install -c peterjc123 pytorch-cpu
 pip install torchvision
 ```
-#### Windows 10
+#### Windows 10 - for Pytorch v0.3.1 or older
 With acknowledgement to Giu of the April Cohort for providing the installation commands.
 ```terminal
 conda install -c peterjc123 pytorch cuda90
