@@ -41,9 +41,11 @@ Be aware that some times more information is provided than will be used in the s
 &nbsp;   
       
 ## Issues with the Lab Workspace
-While it is recommended that you work on the lab within the **_5. Lab Workspace_**, a few students _may_ experienced issues trying to work within the _Lab Workspace_.  Some students in the April cohort found these issues resolved when they switched their internet browser.  Specifically, some student found that **_Chrome_** worked best; while others found that **_Firefox_** worked better for them.  
+While it is recommended that you work on the lab within the **_5. Lab Workspace_**, a few students _may_ experienced issues trying to work within the _Lab Workspace_.  Some students in the April cohort found these issues resolved when they switched their internet browsers.  Specifically, some students found that **_Chrome_** worked best; while others found that **_Firefox_** worked better for them.  If you are running into the problem where the _files_ in the workspace don't load and/or running code within the workspace runs extremely slowly; please try the following:
+* Quit and exit out of the **_web browser_** you are using, then open it back up and restart it.
+* Switch to a different **_web browser_**. 
 
-If you run into issues with the **_5. Lab Workspace_**, we recommend trying a different internet browser.  AlternativIy, you are welcome to complete the lab on a local computer using the instructions in the next [FAQ](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer). 
+If you run into issues with the **_5. Lab Workspace_** and the above recommendations didn't work; alternativIy, you are welcome to complete the lab on a local computer using the instructions in the next [FAQ](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer). 
 &nbsp;      
 &nbsp;     
      
