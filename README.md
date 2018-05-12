@@ -12,7 +12,7 @@ This repository contains code and associated files for the AI Programming with P
 * [Intro to Python Lab - Classifying Images Lab:](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images "Classifying Images Lab") Determine which CNN architecture model works best at classifying images of dogs and their breeds.
 
 ### NumPy and Pandas Mini-Projects
-* [NumPy Mini_Project](https://github.com/udacity/AIPND/tree/master/NumPy%20Mini-Project) Mean normalize and separate data
+* [NumPy Mini-Project](https://github.com/udacity/AIPND/tree/master/NumPy%20Mini-Project) Mean normalize and separate data
 * [Pandas Mini-Project](https://github.com/udacity/AIPND/tree/master/Pandas%20Mini-Project) Get statistics from stock data
 
 ### Quiz Notes
