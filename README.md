@@ -10,6 +10,11 @@ This repository contains code and associated files for the AI Programming with P
     * [Linear Mapping](https://github.com/udacity/AIPND/tree/master/linearalgebra-linear_mapping "Linear Mapping Labs") Learn how to solve some problems computationally using vectors and matrices.
 ### Programming Labs
 * [Intro to Python Lab - Classifying Images Lab:](https://github.com/udacity/AIPND/tree/master/intropylab-classifying-images "Classifying Images Lab") Determine which CNN architecture model works best at classifying images of dogs and their breeds.
+
+### NumPy and Pandas Mini-Projects
+* [NumPy Mini_Project](https://github.com/udacity/AIPND/tree/master/NumPy%20Mini-Project) Mean normalize and separate data
+* [Pandas Mini-Project](https://github.com/udacity/AIPND/tree/master/Pandas%20Mini-Project) Get statistics from stock data
+
 ### Quiz Notes
 * [Notes:](https://github.com/udacity/AIPND/tree/master/notes "Notes") This directory contains more information about certain quizzes that are testing more challenging concepts. The filename indicates which _quiz_ the note is covering. Additionally, one will find the [Frequently Asked Questions](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md) for the _Intro to Python Lab_. Click on the filename to view the contents of the notes on a _quiz_ or the _Intro to Python Lab_.
 
