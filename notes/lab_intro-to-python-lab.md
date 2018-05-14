@@ -7,7 +7,7 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 * [GitHub AIPND Repository Link](https://github.com/udacity/AIPND)
 * [Approaching and Completing the Lab](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#approaching-and-completing-the-lab)
 * [Choosing Between the Two Versions of the Lab](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#choosing-between-the-two-versions-of-the-lab)
-* [**"Checking your code"** using Provided Functions](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#choosing-between-the-two-versions-of-the-lab)
+* [**"Checking your code"** using Provided Functions](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#checking-your-code-using-provided-functions)
 * [**_5. Lab Workspace_** is Missing **_check_images_hints.py_**](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#5-lab-workspace-is-missing-check_images_hintspy)
 * [Issues with the Lab Workspace](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#issues-with-the-lab-workspace)
 * [Running the Lab on a Local Computer](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer)
