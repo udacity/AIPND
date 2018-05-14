@@ -26,7 +26,7 @@
 #      python check_images_novice.py --dir <directory with images> --arch <model>
 #             --dogfile <file that contains dognames>
 #   Example call:
-#    python check_images_novice.py --dir pet_images/ --arch vgg --dogfile dognames.txt
+#    python check_images_hints.py --dir pet_images/ --arch vgg --dogfile dognames.txt
 ##
 
 # Imports python modules
