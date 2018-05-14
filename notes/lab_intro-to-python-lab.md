@@ -6,9 +6,9 @@ These notes pertain to Frequently Asked Questions (FAQ) for the **_2. Intro to P
 ## Quick Links to Frequently Asked Questions 
 * [GitHub AIPND Repository Link](https://github.com/udacity/AIPND)
 * [Approaching and Completing the Lab](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#approaching-and-completing-the-lab)
-* [Choosing Between the Two Versions of the Lab](https://github.com/udacity/AIPND/blob/master/notes/choosing-between-the-two-versions-of-the-lab)
-* [**"Checking your code"** using Provided Functions](https://github.com/udacity/AIPND/blob/master/notes/checking-your_code-using-provided-functions)
-* [**_5. Lab Workspace_** is Missing **_check_images_hints.py_**](https://github.com/udacity/AIPND/blob/master/notes/5lab-workspace-is-missing-check_images_hintspy)
+* [Choosing Between the Two Versions of the Lab](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#checking-your-code-using-provided-functions)
+* [**"Checking your code"** using Provided Functions](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#choosing-between-the-two-versions-of-the-lab)
+* [**_5. Lab Workspace_** is Missing **_check_images_hints.py_**](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#5-lab-workspace-is-missing-check_images_hintspy)
 * [Issues with the Lab Workspace](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#issues-with-the-lab-workspace)
 * [Running the Lab on a Local Computer](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer)
 * [Files Required to Run **_check_images.py_** or **_check_images_hints.py_** Locally](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#files-required-to-run-check_imagespy-or-check_images_hintspy-locally)
@@ -44,28 +44,30 @@ Be aware that some times more information is provided than will be used in the s
 &nbsp;   
     
 ## Choosing Between the Two Versions of the Lab 
-Students have to choose between two versions of the lab. Based upon student feedback, we created **_check_images_hints.py_** which is the same as **_check_images.py_** except **_check_images_hints.py_**:
+Students have to choose between two versions of the lab. Based upon student feedback, we have provided [**_check_images_hints.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/check_images_hints.py) which is the same as [**_check_images.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/check_images.py) except **_check_images_hints.py_**:
 * Provides more of the instructor solution, so there is less for the student to code on their own.
 * Provides detailed directions on the sections that the student is expected to code on their own.
+
 **_check_images_hints.py_**  was designed for students that:
 * Have less time to devote to the lab,
 * Are new to Python and/or programming, or
 * Feel less comfortable with programming in Python.
+
 Both **_check_images.py_** and **_check_images_hints.py_** will reach the same solution, so the solutions videos at the end of each section apply to both. It is left for the student to decide which version of the lab (**_check_images.py_** or **_check_images_hints.py_**) that they want to complete. Please review **3. Lab Instructions** for more details.
 &nbsp;    
 &nbsp;    
      
  ## **"Checking your code"** using Provided Functions  
  Students can use the functions within the program [**_print_functions_for_lab_checks.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/print_functions_for_lab_checks.py) to check their code for sections **7.Command Line Arguments** through **14. Calculating Results**. Students will find this program within the Lab Workspace and within the GitHub repository (see link above). The docstring below each function definition within [**_print_functions_for_lab_checks.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/print_functions_for_lab_checks.py), describes how to use the function. Additionally, one can find each function used within the Lab Solution, [**_check_images_solution.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/check_images_solution.py).
- #### How to Check **_check_images.py_**
- If your **_check_images.py_** program does **not** have the following import statement then your **_check_images.py_** doesn't have access to the functions in [**_print_functions_for_lab_checks.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/print_functions_for_lab_checks.py). This import statement should occur around **line 30** in the program.
+ ### How to Check **_check_images.py_**
+ If your **_check_images.py_** program does **not** have the following import statement, then your **_check_images.py_** doesn't have access to the functions in [**_print_functions_for_lab_checks.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/print_functions_for_lab_checks.py). This import statement should occur around **line 30** in the **_check_images.py_** program.
  ```python
  # Imports print functions that check the lab
  from print_functions_for_lab_checks import *
 
  ```
- #### How to update **_check_images.py_** to use these Functions
- For students that began editing **_check_images.py_** prior to when these functions were made available in the workspace you will need to do the following to have access to the [**_print_functions_for_lab_checks.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/print_functions_for_lab_checks.py) functions.
+ ### How to update **_check_images.py_** to use these Functions
+ For students that began editing **_check_images.py_** prior to when these functions were made available in the workspace; you will need to do the following to have access to the [**_print_functions_for_lab_checks.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/print_functions_for_lab_checks.py) functions.
  * Add the following import statement **after** the statement `from classifier import classifier` but **before** `def main():` in **_check_images.py_**. 
  ```python
  # Imports print functions that check the lab
@@ -77,11 +79,13 @@ Both **_check_images.py_** and **_check_images_hints.py_** will reach the same s
  &nbsp;      
       
 ## **_5. Lab Workspace_** is Missing **_check_images_hints.py_** 
-For students that began editing **_check_images.py_** prior to when the program [**_check_images_hints.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/check_images_hints.py) was made available in the workspace you will need to do the following to have access to it. 
+For students that began editing **_check_images.py_** prior to when the program [**_check_images_hints.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/check_images_hints.py) was made available in the workspace; you will need to do the following to have access to it. 
+
 **Upload** the following files into the **5. Lab Workspace**
 * Program [**_check_images_hints.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/check_images_hints.py)
 * Program [**_print_functions_for_lab_checks.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/print_functions_for_lab_checks.py) - if you didn't already upload it into the workspace from the previous [FAQ](https://github.com/udacity/AIPND/blob/master/notes/checking-your_code-using-provided-functions) 
 * File [**_run_models_batch_hints.sh_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/run_models_batch_hints.sh) 
+
   See the video from **4. Workspace How-to** to see how to upload a file into the lab workspace.  If you are working on your own computer, **download** [**_check_images_hints.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/check_images_hints.py), [**_print_functions_for_lab_checks.py_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/print_functions_for_lab_checks.py), and [**_run_models_batch_hints.sh_**](https://github.com/udacity/AIPND/blob/master/intropylab-classifying-images/run_models_batch_hints.sh) into the same folder that you have the **_check_images.py_** program.
 &nbsp;         
 &nbsp;        
