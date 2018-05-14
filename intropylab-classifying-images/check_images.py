@@ -6,6 +6,8 @@
 # PROGRAMMER:
 # DATE CREATED:
 # REVISED DATE:             <=(Date Revised - if any)
+# REVISED DATE: 05/14/2018 - added import statement that imports the print 
+#                           functions that can be used to check the lab
 # PURPOSE: Check images & report results: read them in, predict their
 #          content (classifier), compare prediction to actual value labels
 #          and output results
@@ -24,6 +26,9 @@ from os import listdir
 
 # Imports classifier function for using CNN to classify images 
 from classifier import classifier 
+
+# Imports print functions that check the lab
+from print_functions_for_lab_checks import *
 
 # Main program function defined below
 def main():
