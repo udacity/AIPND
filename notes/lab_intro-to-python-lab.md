@@ -143,7 +143,7 @@ Also be aware the instructor provided solution also exists within the GitHub rep
 &nbsp;     
      
 ## Running Batch Files on Windows OS Locally
-To run the files **_run_models_batch_** and **_run_models_batch_solution_** that run all 3 model architectures using **_check_images.py_** or **_check_images_solution.py_** on a Windows OS locally; you will need to use the files that end with the extention **_.bat_** instead of the extension **_.sh_**.  You will have also needed to have installed Anaconda on your computer (see following [FAQ](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer) for details on Anaconda installation).
+To run the files **_run_models_batch_**, **_run_models_batch_hints_**, or **_run_models_batch_solution_** that run all 3 model architectures using **_check_images.py_**, **_check_images_hints.py_**, or **_check_images_solution.py_** on a Windows OS locally; you will need to use the files that end with the extention **_.bat_** instead of the extension **_.sh_**.  You will have also needed to have installed Anaconda on your computer (see following [FAQ](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-the-lab-on-a-local-computer) for details on Anaconda installation).
 ### Directions:
 * Open the **Anaconda Prompt** - either from typing **_Anaconda Prompt_** within the search bar and selecting it _or_ by clicking on it once it's found within the **Anaconda** folder of programs.
 * Navigate to the _folder_ within the **Anaconda Prompt** that contains the _Lab files_ including **_check_images.py_** and **_run_models_batch.bat_** using the command [_cd_](https://en.wikipedia.org/wiki/Cd_(command)).
@@ -151,7 +151,7 @@ To run the files **_run_models_batch_** and **_run_models_batch_solution_** that
 ```terminal
 run_models_batch.bat
 ```
-If instead you are running the instructor solution, **_check_images_solution.py_**, you will replace all instances of **_run_models_batch.bat_** from the _directions_ above with **_run_models_batch_solution.bat_**.
+If instead you are working with the **_check_images_hints.py_** program, you will replace all instances of **_run_models_batch.bat_** from the _directions_ above with **_run_models_batch_hints.bat_**. If instead you are running the instructor solution, **_check_images_solution.py_**, you will replace all instances of **_run_models_batch.bat_** from the _directions_ above with **_run_models_batch_solution.bat_**.
 &nbsp;     
 &nbsp;         
     
