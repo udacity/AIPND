@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # */AIPND/intropylab-classifying-images/check_images.py
-#                                                                             
-# TODO: 0. Fill in your information in the programming header below
-# PROGRAMMER:
-# DATE CREATED:
+#
+# PROGRAMMER: Karl Krukow
+# DATE CREATED: July 24
 # REVISED DATE:             <=(Date Revised - if any)
 # REVISED DATE: 05/14/2018 - added import statement that imports the print 
 #                           functions that can be used to check the lab
@@ -18,10 +17,31 @@
 #   Example call:
 #    python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
 ##
+# Program Outline
+# Repeat below for all three image classification algorithms (e.g. input algorithm as command line argument):
+#
+# Time your program
+# Use Time Module to compute program runtime
+# Get program Inputs from the user
+# Use command line arguments to get user inputs
+# Create Pet Images Labels
+# Use the pet images filenames to create labels
+# Store the pet image labels in a data structure (e.g. dictionary)
+# Create Classifier Labels and Compare Labels
+# Use the Classifier function classify the images and create the classifier labels
+# Compare Classifier Labels to Pet Image Labels
+# Store Pet Labels, Classifier Labels, and their comparison in a complex data structure (e.g. dictionary of lists)
+# Classifying Labels as "Dogs" or "Not Dogs"
+# Classify all Labels (Pet & Classifier) as "Dogs" or "Not Dogs" using dognames.txt file
+# Store new classifications in the complex data structure (e.g. dictionary of lists)
+# Calculate the Results
+# Use Labels and their classifications to determine how well the algorithm worked on classifying images.
+# Print the Results
 
 # Imports python modules
+
 import argparse
-from time import time, sleep
+from time import time, sleep, strftime, gmtime
 from os import listdir
 
 # Imports classifier function for using CNN to classify images 
@@ -32,9 +52,8 @@ from print_functions_for_lab_checks import *
 
 # Main program function defined below
 def main():
-    # TODO: 1. Define start_time to measure total program runtime by
     # collecting start time
-    start_time = None
+    start_time = time()
     
     # TODO: 2. Define get_input_args() function to create & retrieve command
     # line arguments
@@ -65,13 +84,11 @@ def main():
     # incorrect classifications of dogs and breeds if requested.
     print_results()
 
-    # TODO: 1. Define end_time to measure total program runtime
     # by collecting end time
-    end_time = None
+    end_time = time()
 
-    # TODO: 1. Define tot_time to computes overall runtime in
     # seconds & prints it in hh:mm:ss format
-    tot_time = None
+    tot_time = strftime("%H:%M:%S", gmtime(end_time - start_time))
     print("\n** Total Elapsed Runtime:", tot_time)
 
 
