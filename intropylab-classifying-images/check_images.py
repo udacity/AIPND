@@ -54,10 +54,11 @@ from print_functions_for_lab_checks import *
 def main():
     # collecting start time
     start_time = time()
-    
-    # TODO: 2. Define get_input_args() function to create & retrieve command
+
     # line arguments
     in_arg = get_input_args()
+
+    print(in_arg)
     
     # TODO: 3. Define get_pet_labels() function to create pet image labels by
     # creating a dictionary with key=filename and value=file label to be used
@@ -115,7 +116,25 @@ def get_input_args():
     Returns:
      parse_args() -data structure that stores the command line arguments object  
     """
-    pass
+    parser = argparse.ArgumentParser(description="""
+        Check images & report results: read them in, predict their
+        content (classifier), compare prediction to actual value labels
+        and output results
+""")
+    parser.add_argument('--dir',
+                        default='pet_images/',
+                        help='Path to the pet image files(default- pet_images/)')
+
+    parser.add_argument('--arch',
+                        default='vgg',
+                        help="CNN model architecture to use for image classification(default- vgg)",
+                        choices=['vgg', 'alexnet', 'resnet'])
+
+    parser.add_argument('--dogfile',
+                        default='dognames.txt',
+                        help="Text file that contains all labels associated to dogs(default- 'dognames.txt')")
+
+    return parser.parse_args()
 
 
 def get_pet_labels():
