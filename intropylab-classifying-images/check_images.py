@@ -77,17 +77,17 @@ def main():
 
 
 # TODO: 2.-to-7. Define all the function below. Notice that the input 
-# paramaters and return values have been left in the function's docstrings. 
-# This is to provide guidance for acheiving a solution similar to the 
+# parameters and return values have been left in the function's docstrings. 
+# This is to provide guidance for achieving a solution similar to the 
 # instructor provided solution. Feel free to ignore this guidance as long as 
-# you are able to acheive the desired outcomes with this lab.
+# you are able to achieve the desired outcomes with this lab.
 
 def get_input_args():
     """
     Retrieves and parses the command line arguments created and defined using
     the argparse module. This function returns these arguments as an
     ArgumentParser object. 
-     3 command line arguements are created:
+     3 command line arguments are created:
        dir - Path to the pet image files(default- 'pet_images/')
        arch - CNN model architecture to use for image classification(default-
               pick any of the following vgg, alexnet, resnet)
@@ -105,7 +105,7 @@ def get_pet_labels():
     """
     Creates a dictionary of pet labels based upon the filenames of the image 
     files. Reads in pet filenames and extracts the pet image labels from the 
-    filenames and returns these label as petlabel_dic. This is used to check 
+    filenames and returns these labels as petlabel_dic. This is used to check 
     the accuracy of the image classifier model.
     Parameters:
      image_dir - The (full) path to the folder of images that are to be
@@ -130,8 +130,8 @@ def classify_images():
       images_dir - The (full) path to the folder of images that are to be
                    classified by pretrained CNN models (string)
       petlabel_dic - Dictionary that contains the pet image(true) labels
-                     that classify what's in the image, where its' key is the
-                     pet image filename & it's value is pet image label where
+                     that classify what's in the image, where its key is the
+                     pet image filename & its value is pet image label where
                      label is lowercase with space between each word in label 
       model - pretrained CNN whose architecture is indicated by this parameter,
               values must be: resnet alexnet vgg (string)
@@ -165,8 +165,8 @@ def adjust_results4_isadog():
                             'as-NOT-a' dog.
      dogsfile - A text file that contains names of all dogs from ImageNet 
                 1000 labels (used by classifier model) and dog names from
-                the pet image files. This file has one dog name per line
-                dog names are all in lowercase with spaces separating the 
+                the pet image files. This file has one dog name per line.
+                Dog names are all in lowercase with spaces separating the 
                 distinct words of the dogname. This file should have been
                 passed in as a command line argument. (string - indicates 
                 text file's name)
